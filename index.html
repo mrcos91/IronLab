@@ -1,4 +1,4 @@
-html_content = """<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>IronLab · Dashboard Ironman</title>
@@ -391,7 +391,6 @@ $('tb').onclick=e=>{const d=e.target.dataset.del;if(d){S.acts=S.acts.filter(a=>a
 $('clr').onclick=()=>{if(confirm('¿Borrar todas las actividades guardadas?')){S.acts=[];S.sel=null;save();render()}};
 load();['lthr','maxhr','ftp','race'].forEach(k=>$(k).value=S.sets[k]);render();
 </script></body></html>
-"""
 
 with open('IMDashboard.html', 'w', encoding='utf-8') as f:
     f.write(html_content)
